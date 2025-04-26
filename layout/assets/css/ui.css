@@ -1,0 +1,261 @@
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #F2F2F2;
+    background-color: #007BFF;
+    transition: 0.3s;
+
+    &:hover{
+        background-color: transparent;
+        color: #007BFF;
+    }
+
+    &.btn__border{
+        background-color: transparent;
+        color: #007BFF;
+
+        &:hover{
+            background-color: #007BFF;
+            color: #F2F2F2;
+        }
+
+        &.btn__red{
+            background-color: transparent;
+            color: #DB5555;
+
+            &:hover{
+                background-color: #DB5555;
+                color: #F2F2F2;
+            }
+        }
+        &.btn__brown{
+            background-color: transparent;
+            color: #E6BB80;
+
+            &:hover{
+                background-color: #E6BB80;
+                color: #F2F2F2;
+            }
+        }
+        &.btn__green{
+            background-color: transparent;
+            color: #169216;
+
+            &:hover{
+                background-color: #169216;
+                color: #F2F2F2;
+            }
+        }
+    }
+    &.btn__red{
+        background-color: #DB5555;
+        border-color: #DB5555;
+        
+        &:hover{
+            background-color: transparent;
+            color: #DB5555;
+        }
+    }
+    &.btn__green{
+        background-color: #169216;
+        border-color: #169216;
+        
+        &:hover{
+            background-color: transparent;
+            color: #169216;
+        }
+    }
+    &.btn__brown{
+        background-color: #E6BB80;
+        border-color: #E6BB80;
+        
+        &:hover{
+            background-color: transparent;
+            color: #E6BB80;
+        }
+    }
+}
+
+.title__stroke{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1A1A;
+
+    &::after,&::before{
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #C4C4C4;
+    } 
+}
+.title__page{
+    font-weight: 600;
+    font-size: 20px;
+    color: #007BFF;
+    width: fit-content;
+}
+.title__upper{
+    font-weight: 400;
+    font-size: 14px;
+    color: #1A1A1A;
+    width: fit-content;
+    text-transform: uppercase;
+
+    & span{
+        color: #007BFF;
+    }
+}
+
+.input__cust{
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #C4C4C4;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1A1A1A;
+    width: 100%;
+
+    &::placeholder{
+        font-size: 12px;
+        font-weight: 400;
+        color: #C4C4C4;
+        font-family: "Inter";
+    }
+}
+.label__cust{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+
+    &>p{
+        font-size: 12px;
+        font-weight: 400;
+        color: #1A1A1A;
+    }
+}
+.custom-select {
+    position: relative;
+    width: 100%;
+
+    /* Стили для контейнера значения */
+    & .custom-select__value {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #C4C4C4;
+        padding: 11px 20px;
+        border-radius: 8px;
+        background-color: transparent;
+        color: #1A1A1A;
+        font-size: 12px;
+        font-weight: 400;
+        cursor: pointer;
+
+        /* Стрелочка */
+        & .custom-select__arrow {
+            transition: transform 0.3s ease;
+        }
+
+        /* Состояние стрелочки при открытом списке */
+        & .custom-select__arrow.open {
+            transform: rotate(180deg);
+        }
+    }
+
+    /* Стили для контейнера опций */
+    & .custom-select__options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 8px;
+        border: 1px solid #C4C4C4;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        z-index: 10;
+        overflow: hidden;
+
+        /* Состояние видимости списка */
+        &.open {
+            display: block;
+        }
+
+        /* Стили для каждой опции */
+        & .custom-select__option {
+            padding: 11px 20px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #1A1A1A;
+            cursor: pointer;
+            background-color: #FFFFFF;
+
+            /* Эффект при наведении */
+            &:hover {
+                background-color: #F0F0F0;
+            }
+        }
+    }
+}
+
+.table__list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #1A1A1A;
+    padding: 1px;
+
+    & .table__row{
+        display: flex;
+        width: 100%;
+        gap: 1px;
+        background-color: transparent;
+    }
+
+    & .table__cell{
+        flex: 1;
+        min-width: max-content;
+        padding: 20px;
+        background-color: #FFFFFF;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: 400;
+        color: #1A1A1A;
+    }
+}
+
+.block__border{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #C4C4C4;
+    overflow: hidden;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.column{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}

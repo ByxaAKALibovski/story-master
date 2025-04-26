@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">Обычная кнопка</div>
+    <div class="btn btn__border">Кнопка с обводкой</div>
+    <div class="btn btn__red">Красная кнопка</div>
+    <div class="btn btn__border btn__red">Красная кнопка с обводкой</div>
+    <div class="btn btn__green">Зеленная кнопка</div>
+    <div class="btn btn__border btn__green">Зеленная кнопка с обводкой</div>
+    <div class="btn btn__brown">Коричневая кнпока</div>
+    <div class="btn btn__border btn__brown">Коричневая кнопка с обводкой</div>
+
+    <h2 class="title__stroke">Склад</h2>
+    <h1 class="title__page">Товар</h1>
+    <h3 class="title__upper">оценка склада по <span>всем складам</span></h3>
+
+    <input type="text" placeholder="E-Mail" class="input__cust">
+    <label for="name" class="label__cust">
+        <p>Имя:</p>
+        <input type="text" id="name" class="input__cust">
+    </label>
+    <select class="select__cust" name="category" id="category">
+        <option value="moloko">Молочные</option>
+        <option value="muso">Мясо</option>
+        <option value="water">Вода</option>
+        <option value="bred">Хлеб</option>
+    </select>
+
+    <ul class="table__list">
+        <li class="table__row">
+            <div class="table__cell">Наименование</div>
+            <div class="table__cell">Количество документов</div>
+            <div class="table__cell">Сумма </div>
+        </li>
+        <li class="table__row">
+            <div class="table__cell">Продажа</div>
+            <div class="table__cell">0</div>
+            <div class="table__cell">0.00</div>
+        </li>
+        <li class="table__row">
+            <div class="table__cell">Закупка</div>
+            <div class="table__cell">0</div>
+            <div class="table__cell">0.00</div>
+        </li>
+        <li class="table__row">
+            <div class="table__cell">Инвентаризация</div>
+            <div class="table__cell">0</div>
+            <div class="table__cell">0.00</div>
+        </li>
+        <li class="table__row">
+            <div class="table__cell">Перемещение</div>
+            <div class="table__cell">0</div>
+            <div class="table__cell">0.00</div>
+        </li>
+    </ul>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
